@@ -11,7 +11,7 @@
 <title>LOGIN</title>
 </head>
 <body>
-	<s:property value="LoginDTIOList.get(0).username"/>さん、ようこそ！
+	<s:property value="LoginDTOList.get(0).username"/>さん、ようこそ！
 
 	<br>
 	<table>
@@ -20,12 +20,12 @@
 				<th>USERNAME</th>
 				<th>PASSWORD</th>
 			</tr>
-			<s:iterator value="loginDTOList">
+<!-- 		<s:iterator value="loginDTOList"> -->
 			<tr>
-				<td><s:property value="username" /></td>
-				<td><s:property value="password" /></td>
+				<td><s:property value="LoginDTOList.get(0).username" /></td>
+				<td><s:property value="LoginDTOList.get(0).password" /></td>
 			</tr>
-			</s:iterator>
+<!-- 		</s:iterator> -->
 		</tbody>
 	</table>
 </body>
